@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Link</title>
+    <style>
+        li{
+            list-style: none;
+            margin: 20px;
+            cursor: pointer;
+            display: inline;
+        }
+        .tabcontent{
+            background-color: red;
+            width: 40%;
+            height: 100px;
+            margin: 10px;
+            display: none;
+        }
+        .displayBlock{
+            display: block;
+        }
+        .active{
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <section class="sidebar">
+        <li  class="tablink" onclick="show('home')">Home</li>
+        <li  class="tablink" onclick="show('services')">Services</li>
+        <li class="tablink" onclick="show('about')">About</li>
+        <li  class="tablink" onclick="show('contact')">Contact Us</li>
+    </section>
+    <section class="container">
+        <div class="tabcontent" id="home">
+            This is Home Tab
+        </div>
+        <div class="tabcontent" id="services">
+            This is Services Tab
+        </div>
+        <div class="tabcontent" id="about">
+            This is About Tab
+        </div>
+        <div class="tabcontent" id="contact">
+            This is Contact Us Tab
+        </div>
+    </section>
+</body>
+<script>
+    let tablink = document.getElementsByClassName('tablink');
+    let tabcontent = document.getElementsByClassName('tabcontent');
+
+    function show(str){
+        for (const ele of tablink) {
+            ele.classList.remove("active");
+        }
+        for (tab of tabcontent) {
+            tab.classList.remove("displayBlock");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(str).classList.add("displayBlock");
+    }
+</script>
+</html>

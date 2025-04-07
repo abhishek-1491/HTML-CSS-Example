@@ -1,0 +1,191 @@
+/* outline.html file css START */
+
+.outline1{
+    outline: 2px solid;
+    outline-width: 5px;
+}
+.outline2{
+    outline: 2px dotted;
+    outline-width: 10px;
+}
+.outline3{
+    outline: 2px dashed;
+    outline-offset: 10px;
+    border: 2px dotted;
+}
+.outline4{
+    outline: 20px ;
+    outline-style: inset;
+    /* outline-offset: is used to create space between border and outline */
+    outline-offset: 10px; 
+}
+.outline5{
+    outline: 15px groove;
+    outline-offset: 10px;
+    outline-width: medium; 
+    /* outline-width:thik; outline-width: thin; */
+}
+.outline6{
+    outline: 20px ;
+    outline-style: outset;
+    outline-offset: 10px;
+}
+
+
+body{
+    
+    margin: 50px;
+}
+
+/* outline.html file css END */
+
+
+/* text.html file css START */
+
+.test{
+    width: 600px;
+   
+    border: 1px solid;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+.test h1{
+    
+    text-align: center;
+}
+.test p{
+    /* color: rgb(10, 22, 45); */
+    text-align: justify;
+}
+a#third{
+    color: rgb(208, 227, 228);
+    text-align: right;
+}
+
+.a{
+    text-align-last: right;
+}
+.b{
+    text-align-last: center;
+}
+.c{
+    text-align-last: justify;
+}
+.d{
+    direction: rtl;
+    /* use only if direction attribute is not work */
+    /* unicode-bidi: bidi-override; */
+}
+
+#first,#second{
+    color: black;
+
+}
+
+.test p a{
+    vertical-align: super;
+}
+
+.overline{
+    text-decoration: overline;
+    text-decoration-style:  double;
+    text-shadow: 2px 2px blue;
+    text-decoration-color: yellow;
+    
+}
+.downline{
+    text-decoration: underline dotted blue 5px;
+}
+.strike{
+    text-decoration: line-through;
+    text-decoration-thickness: 10px;
+}
+.underover{
+    text-decoration: overline underline;
+}
+.linestyle{
+    text-decoration: overline line-through underline;
+    text-decoration-style:  dashed;
+    text-transform: capitalize;
+    
+}
+.heading6{
+    text-transform: uppercase;
+    
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.indent{
+    text-indent: 50px;
+}
+.spacing{
+    letter-spacing: 5px;
+}
+.letterspacing{
+    letter-spacing: -1px;
+}
+.linehight{
+    line-height: 35px;
+}
+.shadow{
+    text-shadow: 10px 0px 20px  black ;
+}
+.bigshadow{
+    color: rgb(43, 43, 23);
+    font-size: 50px;
+    position: relative;
+    margin: 10px;
+    margin-left: 80px;
+}
+span{
+    color: gray;
+    font-size: 70px;
+    filter: blur(3px);
+    top: -12px;
+    left: -50px;
+    position: absolute;
+    
+}
+
+.coloring{
+    color: white;
+    text-shadow: 1px 1px 2px black , 0px 0px 25px blue, 0px 0px 5px darkblue;
+    background-color: red;
+    width: 50%;
+
+}
+.font{
+    width: 600px;
+    border: 1px solid;
+    padding: 20px;
+}
+.italic
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-variant: normal;
+}
+.oblic{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-style: oblique;
+    font-weight: bold;
+    font-variant: small-caps;
+    
+}
+.font h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+

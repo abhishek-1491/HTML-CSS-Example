@@ -1,0 +1,133 @@
+.animation {
+    width: 100px;
+    height: 100px;
+    /* margin-left: 40%;
+    margin-top: 20%; */
+    /* background-color: red; */
+    background-image: url(/images/ABHI.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: first;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 1s;  */
+    animation-direction: alternate-reverse; /* To change the direction of animation*/
+    /* alternate-reverse value is used for 1 time clockwise direction and 1 time anticlockwise direction*/
+    /* margin-left: ; */
+    
+}
+
+@keyframes first {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 100px;
+        top: 0px;
+        /* background-color: blue; */
+        border-radius: 20px;
+        background-image: url(/images/A--.jpg);
+        background-size: cover;
+
+        
+
+    }
+
+    50% {
+        left: 100px;
+        top: 100px;
+        /* background-color: aliceblue; */
+        border-radius: 40px;
+        background-image: url(/images/B---.jpg);
+        background-size: cover;
+
+    }
+
+    75% {
+        left: 0px;
+        top: 50px;
+        /* background-color: yellow; */
+        border-radius: 20px;
+        background-image: url(/images/H---.jpg);
+        background-size: cover;
+
+
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+        /* background-color: blue; */
+        background-image: url(/images/I--.jpg);
+        background-size: cover;
+
+
+    }
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    margin-top: 750px;
+    border: 2px solid yellow;
+    background-color: gray;
+    position: relative;
+    animation-name: demo;
+    animation-duration: 1s;
+    /* animation-delay: 3s; */
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes demo{
+    from{
+        bottom: 0px;
+    }
+    to{
+        bottom: 740px;
+    }
+}
+
+.side-bar{
+    width: 15%;
+    height: 80vh;
+    
+    margin-left: -248PX;
+    background-color: aqua;
+    border: 1px solid black;
+    margin-top: -740px;
+    position: relative;
+    animation-name: side-bar;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    /* float: left; */
+}
+
+@keyframes side-bar{
+    from{
+        left : 1500px;
+    }
+    to{
+        left : 250px; 
+    }
+}
+
+
+
+/* #id1{
+    animation-timing-function: linear;
+}
+#id2{
+    animation-timing-function: ease;
+}#id3{
+    animation-timing-function: ease-in;
+}#id4{
+    animation-timing-function: ease-out;
+}#id5{
+    animation-timing-function: ease-in-out;
+} */

@@ -1,0 +1,64 @@
+body{
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+ul li{
+    font-size: 30px;
+    list-style: circle;
+}
+ul li:hover,ol li:hover{
+    background-color: aqua;
+}
+ol li{
+    list-style: upper-roman;
+}
+.demo li::before{
+    content: '😀 ';
+}
+.demo li:nth-child(2)::before{
+    content: '😄 ';
+}
+.demo li:nth-child(3)::before{
+    content: '🗿 ';
+}
+.demo li:nth-child(4)::before{
+    content: '😅 ';
+}
+.demo2 li{
+    list-style: none;
+    
+    /* list-style-image: '&#128512'; */
+
+}
+
+.demo3 li{
+    list-style-image: url(/images/arrow-right-solid.svg);
+}
+
+ul{
+    background-color: aqua;
+    padding: 10px;
+}
+ul li{
+    background-color: blueviolet;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+ol{
+    background-color: yellow;
+}
+ol li{
+    background-color: gold;
+}
+ul li:nth-child(2){
+    background-color: yellow;
+}
+ul li:nth-child(3){
+    background-color: green;
+}
+ul li:nth-child(4){
+    background-color: lightblue;
+}
+
